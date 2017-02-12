@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.hbjpro.pruebatranslator.ViewActivity"
-    android:background="#000000">
+    android:background="@color/black">
 
     <LinearLayout
         android:orientation="vertical"
@@ -30,8 +30,8 @@
             android:padding="5dp"
             android:textAlignment="center"
             android:hint="From..."
-            android:textColor="#ffffff"
-            android:textColorHint="#BDBDBD"/>
+            android:textColor="@color/white"
+            android:textColorHint="@color/hintColor"/>
 
 
 
@@ -48,7 +48,7 @@
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true" />
 
-            <!--Spinner
+            <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/to"
@@ -58,10 +58,7 @@
                 android:layout_toRightOf="@+id/translate"
                 android:layout_toEndOf="@+id/translate"
                 android:background="@drawable/background2"
-                android:popupBackground="@drawable/background2"
-                android:layout_marginLeft="5dp"
-
-                />
+                android:popupBackground="@drawable/background2"/>
 
             <Spinner
                 android:layout_width="wrap_content"
@@ -73,9 +70,7 @@
                 android:layout_toLeftOf="@+id/translate"
                 android:layout_toStartOf="@+id/translate"
                 android:background="@drawable/background2"
-                android:popupBackground="@drawable/background2"
-                android:layout_marginRight="5dp"
-                /-->
+                android:popupBackground="@drawable/background2" />
 
         </RelativeLayout>
         <RelativeLayout
@@ -95,9 +90,8 @@
                 android:paddingTop="15dp"
                 android:textAlignment="center"
                 android:hint="To..."
-                android:singleLine="false"
                 android:textColor="#ffffff"
-                android:textColorHint="#BDBDBD"
+                android:textColorHint="@color/hintColor"
                 android:layout_centerInParent="true" />
         </RelativeLayout>
 

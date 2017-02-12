@@ -4,6 +4,7 @@ import android.util.Log;
 
 import com.hbjpro.pruebatranslator.Interfaces.Observador;
 import com.hbjpro.pruebatranslator.Model.Modelo;
+import com.memetix.mst.language.Language;
 
 import java.io.Serializable;
 
@@ -19,7 +20,7 @@ public class Controlador implements Serializable{
         modelo.addObserver(obs);
     }
 
-    public void translateText(String originalText){
-        modelo.translateText(originalText);
+    public void translateText(String originalText, Language from, Language to){
+        modelo.translateText(originalText, from, to);
     }
 }
