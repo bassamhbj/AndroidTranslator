@@ -27,8 +27,8 @@ public class Traductor implements Serializable{
 
         @Override
         protected String doInBackground(String... params) {
-            Translate.setClientId("appcoder33");
-            Translate.setClientSecret("5jvik/fcB3Z68Lj+8M4sdNfu5tUrGZsnrI6ctuyOAaM=");
+            Translate.setClientId("");
+            Translate.setClientSecret("");
 
             try {
                 return Translate.execute(text, from, to);
